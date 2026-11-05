@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Nova Siper",
+      "hasCanvas": true,
+      "bodyTextLen": 450,
+      "bodyTextHash": "295dd12601c2ad0a9390e2cf335cf2d3a1e33219c9adcf816c8a3adc0835fd7a",
+      "bodyTextPrefix": "NOVA SİPER ÜSTTEN BAKIŞLI NİŞANCI Dalgayı kır. Tek namluyla başl",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Nova Siper",
+      "hasCanvas": true,
+      "bodyTextLen": 450,
+      "bodyTextHash": "295dd12601c2ad0a9390e2cf335cf2d3a1e33219c9adcf816c8a3adc0835fd7a",
+      "bodyTextPrefix": "NOVA SİPER ÜSTTEN BAKIŞLI NİŞANCI Dalgayı kır. Tek namluyla başl",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

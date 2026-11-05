@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #070b12;
+  --color-surface: #121a28;
+  --color-fg: #e8eef6;
+  --color-muted: #93a4ba;
+  --color-primary: #2ad4c2;
+  --color-danger: #ff5a6a;
+  --color-border: #243246;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Chakra Petch", "Figtree", ui-sans-serif, sans-serif;
+  --radius-lg: 0.9rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.stage {
+  height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.sheet {
+  max-height: 72dvh;
+  overflow-y: auto;
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+}
+
+.joy {
+  touch-action: none;
+}
+
+@media (min-width: 48rem) {
+  .sheet {
+    max-height: calc(100dvh - 4rem);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.4rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.banner-in {
+  animation: rise-in 180ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner-in {
+    animation: none;
+  }
+}
